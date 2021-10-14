@@ -71,7 +71,7 @@ def test_get_fact_by_id(expected_response_code, expected_response_time, expected
 @pytest.mark.parametrize('expected_response_code, expected_response_time, expected_type, fact_id, amount',
                          [(constant.STATUS_CODE_404_NOT_FOUND, constant.DEFAULT_RESPONSE_TIME, 'cat',
                            'aa1f97b4ccb34a14d3f7dc94', 1)])
-@allure.title('Verify the cat-facts api return an error using an valid record by ID')
+@allure.title('Verify the cat-facts api return an error using an invalid record ID')
 def test_get_fact_invalid_id(expected_response_code, expected_response_time, expected_type, fact_id, amount):
 
     # ARRANGE #
